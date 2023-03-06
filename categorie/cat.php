@@ -8,7 +8,7 @@
         if(!empty($_POST["categorie"])){
             $insert = $db -> prepare("INSERT INTO categorie (libelleCa) VALUES (?)");
             $insert -> execute([$_POST["categorie"]]);
-            header("../");
+            header("location:../categorie");
         }else{
             echo ("champs vide non valide");
         }
