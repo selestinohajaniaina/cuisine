@@ -7,5 +7,5 @@
     // header('location:../categorie');
 ?>
 <script>
-    document.location.href="../categorie";
+    document.location.href="/categorie";
 </script>

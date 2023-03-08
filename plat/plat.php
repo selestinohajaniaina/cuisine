@@ -3,7 +3,7 @@
     </p>
 <form method="post" class="flex h-[50px] m-2 rounded-full border-solid border-2 border-blue-500 overflow-hidden">
     <input type="text" name="plat" placeholder="nom du plat" class="text-center outline-none w-full">
-    <input type="submit" value="valider" name="submit" class="bg-gray-100 h-full w-[40%]">
+    <input type="submit" value="créer" name="submit" class="bg-gray-100 h-full w-[40%]">
 </form>
 <?php
     if(isset($_POST["submit"])){
