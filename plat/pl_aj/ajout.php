@@ -12,12 +12,13 @@
     $selectpr -> execute();
     $fetch = $selectpr -> fetchAll();
     $nbr = count($fetch);
+    $nom=$nom_plat;
+    require('retour.php');
 ?>
-<h1><?=$nom_plat?></h1>
 
-<form method="post">
-
-    <select name="produit">
+<form method="post" class="flex flex-col p-2">
+<div class='text-blue-600 text-[7pt] text-center'>Choisir le produit:</div>
+    <select name="produit" class="m-px outline-none text-center rounded-full border-solid border-2 border-blue-500 overflow-hidden">
     <?php
     for($i=0;$i<$nbr;$i++){
     ?>
@@ -26,6 +27,7 @@
     }
     ?>
     </select>
-    <input type="number" name="qte" placeholder="Quantité en L ou en Kg">
-    <input type="submit" value="ajouter" name="submit">
+    <input type="text" name="qte" class="m-px text-center rounded-full border-solid border-2 border-blue-500 overflow-hidden" placeholder="Quantité en L ou en Kg">
+    <input type="submit" value="ajouter" name="submit" class="m-px bg-blue-300 rounded-full border-solid border-2 border-blue-500 overflow-hidden">
+    
 </form>
