@@ -8,9 +8,12 @@
     $fetch_pro_pl = $list_pro_pl -> fetchAll();
     $_pro_nbr = count($fetch_pro_pl);
     for($i=0;$i<$_pro_nbr;$i++){
+        $pro_uni=$fetch_pro_pl[$i]["libellePro"];
+        $table_pro_uni=explode("=",$pro_uni);
+        $produit=$table_pro_uni[0];
         ?>
         <tr class="border-solid border-2 ">
-            <td><?=$fetch_pro_pl[$i]["libellePro"]?> </td> <td class="text-center"> <?=$fetch_pro_pl[$i]["qte"]?></td>
+            <td><?=$produit?> </td> <td class="text-center"> <?=$fetch_pro_pl[$i]["qte"]." ".$table_pro_uni[1]?></td>
 
         </tr>
         <?php

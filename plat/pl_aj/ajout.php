@@ -22,7 +22,7 @@
     <?php
     for($i=0;$i<$nbr;$i++){
     ?>
-    <option value="<?=$fetch[$i]["libellePro"]?>"><?=$fetch[$i]["libellePro"]?></option>
+    <option value="<?=$fetch[$i]["libellePro"].'='.$fetch[$i]["unite"]?>"><?=$fetch[$i]["libellePro"]?></option>
     <?php
     }
     ?>
