@@ -18,7 +18,7 @@
     $selectp = $db -> prepare("select * FROM plat where id_plat=$cd_");
     $selectp -> execute();
     $fetch = $selectp -> fetch();
-    $nom="Recette pour ".$fetch["nom_plat"];
+    $nom=$fetch["nom_plat"];
     require('retour.php');
     require('ad_per.php');
 ?> 

@@ -1,9 +1,10 @@
+<br>
 <p>
         Veillez ajouter le nombre du personne:
     </p>
-<form method="post" class="flex h-[50px] m-2 border-solid border-2 border-blue-500 overflow-hidden">
+<form method="post" class="flex h-[40px] m-2 border-solid border-2 border-blue-500 overflow-hidden">
     <input type="number" name="personne" placeholder="nombre du personne" autocomplete=off class="text-center outline-none border-solid border-r-2 border-blue-500 w-full">
-    <input type="submit" value="obtenir" name="submit" class="bg-blue-300 h-full w-[40%]">
+    <input type="submit" value="valider" name="submit" class="bg-blue-300 h-full w-[40%]">
 </form>
 <?php
     if(isset($_POST["submit"])){
