@@ -13,7 +13,7 @@
         #pro{
             background-image:url("img/pro.jpg");
         }
-        #pla{
+        #rec{
             background-image:url("img/pla.jpg");
         }
     </style>
@@ -47,23 +47,18 @@
     <div class="flex flex-wrap w-full">
     <a href="categorie/" class="w-fit">
         <div class="w-[110px] h-[110px] flex justify-center items-end rounded-lg m-2 shadow-lg overflow-hidden bg-cover bg-center bg-no-repeat border-solid border-2" id="cat">
-        <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Categorie</div>
+            <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Categorie</div>
         </div>
     </a>
     <a href="produit/" class="w-fit">
         <div class="w-[110px] h-[110px] flex justify-center items-end rounded-lg m-2 shadow-lg overflow-hidden bg-cover bg-center bg-no-repeat border-solid border-2" id="pro">
-        <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Produit</div>
+            <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Produit</div>
         </div>
-    </a>
-    <a href="plat/" class="w-fit">
-        <div class="w-[110px] h-[110px] flex justify-center items-end rounded-lg m-2 shadow-lg overflow-hidden bg-cover bg-center bg-no-repeat border-solid border-2" id="pla">
-        <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Plat</div>
-    </div>
     </a>
     <a href="recette/" class="w-fit">
         <div class="w-[110px] h-[110px] flex justify-center items-end rounded-lg m-2 shadow-lg overflow-hidden bg-cover bg-center bg-no-repeat border-solid border-2" id="rec">
-        <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Recette</div>
-    </div>
+            <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Recette</div>
+        </div>
     </a>
     </div>
     </div>
