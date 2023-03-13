@@ -1,6 +1,6 @@
 <table class="w-full">
     <tr class="text-center">
-        <td class="bg-blue-300 border-solid border-2 border-white">Nom</td><td class="bg-blue-300 border-solid border-2 border-white">Categorie</td>
+        <td class="bg-blue-300 border-solid border-2 border-gray-300">Nom</td><td class="bg-blue-300 border-solid border-gray-300">Categorie</td>
     </tr>
     <?php
     $selectp = $db -> prepare("select * FROM produit order by codePro desc");
@@ -9,9 +9,9 @@
     $nbr = count($fetch);
     for($i=0;$i<$nbr;$i++){
         ?>
-        <tr class="border-solid border-2 ">
+        <tr>
 
-            <td><?=$fetch[$i]["libellePro"]?></td><td> <?=$fetch[$i]["codeCa"]?></td>
+            <td class="border-solid border-2 border-gray-300"><?=$fetch[$i]["libellePro"]?></td><td class="border-solid border-2 border-gray-300"> <?=$fetch[$i]["codeCa"]?></td>
         </tr>
         <?php
     }

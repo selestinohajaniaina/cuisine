@@ -15,6 +15,7 @@
     require('../db.php');
     $nom="Recette";
     require('../retour.php');
+    require('plat.php');
     require('recet.php');
 ?>
 

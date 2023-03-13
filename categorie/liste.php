@@ -6,8 +6,8 @@
     $nbr = count($fetch);
     ?>
     <table>
-        <tr>
-            <td class="border-solid border-2 border-gray-300 bg-gray-100">Code</td><td class="text-center border-solid border-2 border-gray-300 bg-gray-100">Nom</td>
+        <tr class="bg-blue-300">
+            <td class="border-solid border-2 border-gray-300">Code</td><td class="text-center border-solid border-2 border-gray-300">Nom</td>
         </tr>
         <?php
     for($i=0;$i<$nbr;$i++){

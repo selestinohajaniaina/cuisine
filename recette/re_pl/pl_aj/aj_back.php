@@ -5,7 +5,7 @@
         $qte=$_POST["qte"];
         $insert = $db -> prepare("INSERT INTO detailplat (id_plat,libellePro,qte) VALUES (?,?,?)");
         $insert -> execute([$id_plat,$produit,$qte]);  
-        header("location:../pl_aj?cd_=$id_plat");          
+        header("location:./pl_aj?cd_=$id_plat&per_=$per_");          
         }else{
             echo "<div class='text-red-600 text-[7pt] text-center'>champs vide non valide</div>";
         }
