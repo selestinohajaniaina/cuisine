@@ -1,35 +1,34 @@
-<p>
-        Veillez ajouter votre nouveaux produits:
-    </p>
+<br>
+<table class="w-full">
+<tr>
 <form method="post" class="flex flex-col p-2">
 
-    <div class="flex">
 
-                <div>
-                <div class='text-blue-600 text-[7pt] text-center'>libellé:</div>
-                <input type="text" name="produit" class="m-px w-full text-center border-solid border-2 border-blue-500 overflow-hidden" placeholder="libelle">
-                </div>
+                <td class="border-solid border-2 border-gray-300">
+                <input type="text" name="produit" class="m-px w-full text-center " placeholder="libelle">
+                </td>
 
-                <div>
-                    <div class='text-blue-600 text-[7pt] text-center'>categorie:</div>
+
+                <td class="border-solid border-2 border-gray-300">
+                    <select name="unite" class="m-px w-full outline-none text-center ">
+                        <option value="L">Litre</option>
+                        <option value="kg">Kg</option>
+                        <option value="pcs">piece</option>
+                    </select>
+                </td>
+                
+                <td class="border-solid border-2 border-gray-300">
                     <?php require("listeCat.php")?>
-                </div>
+                </td>
 
-                <div>
-                <div class='text-blue-600 text-[7pt] text-center'>unité:</div>
-                <select name="unite" class="m-px w-full outline-none text-center border-solid border-2 border-blue-500 overflow-hidden">
-                    <option value="L">Litre</option>
-                    <option value="kg">Kg</option>
-                </select>
-                </div>
-
-    </div>
-
-    <div>
-    <input type="submit" value="valider" name="submit" class="m-px w-full bg-blue-300 border-solid border-2 border-blue-500 overflow-hidden">
-    </div>
+    <td class="border-solid border-2 border-gray-300 ">
+        <button type="submit" name="submit" class="h-full w-full">
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 12L12 12M12 12L17 12M12 12V7M12 12L12 17" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="12" cy="12" r="9" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle> </g></svg>
+        </button>
+    </td>
 
 </form>
+</tr>
 <?php
     if(isset($_POST["submit"])){
 

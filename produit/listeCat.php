@@ -5,11 +5,11 @@
     $nbr = count($fetch);
 
     ?>
-    <select name="categorie" class="text-center w-full border-solid border-2 border-blue-500 overflow-hidden m-px outline-none">
+    <select name="categorie" class="text-center w-full outline-none">
     <?php
     for($i=0;$i<$nbr;$i++){
     ?>
-    <option value="<?=$fetch[$i]["libelleCa"]?>"><?=$fetch[$i]["libelleCa"]?></option>
+    <option value="<?=$fetch[$i]["cat_code"]?>"><?=$fetch[$i]["cat_code"]?></option>
     <?php
     }
     ?>
