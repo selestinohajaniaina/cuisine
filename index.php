@@ -16,10 +16,13 @@
         #rec{
             background-image:url("img/pla.jpg");
         }
+        #res{
+            background-image:url("img/res.jpg");
+        }
     </style>
     <script>
         let width = window.innerWidth;
-        console.log(width);
+        // console.log(width);
     </script>
 </head>
 <body class="">
@@ -60,6 +63,12 @@
             <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Recette</div>
         </div>
     </a>
+    <a href="resultat/" class="w-fit">
+        <div class="w-[110px] h-[110px] flex justify-center items-end rounded-lg m-2 shadow-lg overflow-hidden bg-cover bg-center bg-no-repeat border-solid border-2" id="res">
+            <div class="w-full text-center bg-slate-300 opacity-50 font-bold">Resultat</div>
+        </div>
+    </a>
+
     </div>
     </div>
     
